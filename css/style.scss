@@ -1,0 +1,81 @@
+$green_type: rgb(96,190,174);
+$green_theme: rgb(239,248,247);
+$separate: rgb(217,239,236);
+@mixin flex {
+  display: flex;
+  display: -webkit-flex;
+}
+@mixin direction($arg) {
+  @include flex;
+  flex-direction: $arg;
+  -webkit-flex-direction: $arg;
+}
+@mixin middle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------480px----------------------*/
+@media screen and (max-width: 480px) {
+  body {
+    margin-top: 10px;
+    max-width: 350px;
+    @include middle;
+  }
+  /*---------------nav-top-----------------------*/
+  #nav-info {
+    @include flex;
+    flex-direction: column-reverse;
+  }
+  ul {
+    list-style-type: none;
+    @include direction(row);
+    li {
+      margin-left: 2.5px;
+      margin-right: 2.5px;
+      font-size: 1.4rem;
+    }
+  }
+  .icon {
+    @include middle;
+    img {
+      width: 60px;
+      height: auto;
+    }
+  }
+  .pic {
+    background: url("../img/discuss01.jpg");
+    height: 248px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    @include flex;
+    align-items: flex-end;
+    -webkit-align-content: flex-end;
+  }
+  #titleA {
+    background-color: #fff;
+    font-size: 1rem;
+    width: 350px;
+    line-height: 1rem;
+  }
+  #titleB {
+    background-color: black;
+    color: #ffffff;
+    font-size: 1rem;
+    width: 350px;
+    line-height: 1rem;
+  }
+  aside, #nd-nav {
+    display: none;
+  }
+  /*--------------------content---------------------------*/
+  .img img {
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .arti-with-pic {
+    box-sizing: border-box;
+    padding-top: 20px;
+  }
+}
