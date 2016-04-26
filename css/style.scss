@@ -79,3 +79,37 @@ $separate: rgb(217,239,236);
     padding-top: 20px;
   }
 }
+@media screen and (max-width: 768px){
+  body {
+    width: 480px;
+    margin-top: 20px;
+    @include middle;
+  }
+  .icon img {
+    width: 60px;
+  }
+  ul {
+    @include flex;
+    list-style-type: none;
+    li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  #nav-info {
+    @include flex;
+  }
+  aside {
+    display: none;
+  }
+  #nd-nav {
+    display: none;
+  }
+  .pic {
+    background: url("../img/discuss01.jpg");
+    background-size: cover;
+    height: 248px;
+
+  }
+  /*---------------------content----------------------*/
+}
