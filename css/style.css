@@ -65,8 +65,8 @@
   .arti-with-pic {
     box-sizing: border-box;
     padding-top: 20px; } }
-@media screen and (max-width: 768px) {
-  body {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #wrapper {
     width: 480px;
     margin-top: 20px;
     margin-left: auto;
@@ -76,12 +76,12 @@
     width: 60px; }
 
   ul {
-    display: flex;
-    display: -webkit-flex;
     list-style-type: none; }
     ul li {
       margin-left: 10px;
-      margin-right: 10px; }
+      margin-bottom: 20px;
+      font-size: 1.7rem;
+      display: inline-block; }
 
   #nav-info {
     display: flex;
@@ -96,8 +96,46 @@
   .pic {
     background: url("../img/discuss01.jpg");
     background-size: cover;
-    height: 248px; }
+    height: 248px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    width: 480px; }
 
-  /*---------------------content----------------------*/ }
+  .title-box {
+    width: 100%;
+    line-height: 1rem; }
+
+  #titleA {
+    background-color: white;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5;
+    padding-left: 10px; }
+
+  #titleB {
+    background-color: black;
+    color: #ffffff;
+    padding-left: 5px; }
+
+  /*---------------------content----------------------*/
+  #archives {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .arti-with-pic {
+    width: 50%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-left: 2.5px;
+    padding-right: 2.5px; }
+
+  .img img {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
