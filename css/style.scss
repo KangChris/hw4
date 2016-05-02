@@ -18,14 +18,17 @@ $separate: rgb(217,239,236);
 /*--------------------480px----------------------*/
 @media screen and (max-width: 480px) {
   body {
-    margin-top: 10px;
     max-width: 350px;
+    margin-top: 10px;
     @include middle;
   }
   /*---------------nav-top-----------------------*/
   #nav-info {
     @include flex;
     flex-direction: column-reverse;
+    nav {
+      @include middle;
+    }
   }
   ul {
     list-style-type: none;
@@ -79,6 +82,7 @@ $separate: rgb(217,239,236);
     padding-top: 20px;
   }
 }
+/*----------------------768px-----------------------*/
 @media screen and (min-width: 481px) and (max-width: 768px){
   #wrapper {
     width: 480px;
@@ -87,6 +91,8 @@ $separate: rgb(217,239,236);
   }
   .icon img {
     width: 60px;
+    height: auto;
+    margin-right: 20px;
   }
   ul {
     list-style-type: none;
@@ -117,7 +123,6 @@ $separate: rgb(217,239,236);
   .title-box {
     width: 100%;
     line-height: 1rem;
-
   }
   #titleA {
     background-color: white;
@@ -149,4 +154,91 @@ $separate: rgb(217,239,236);
   .img img {
     width: 100%;
   }
+}
+/*----------------------991px---------------------*/
+@media screen and (min-width: 769px) and (max-width: 991px){
+  body {
+    width: 768px;
+    @include middle;
+    margin-top: 30px;
+  }
+  #nav-info {
+    @include flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+  }
+  .icon img{
+    width: 100px;
+    position: relative;
+    top: 15px;
+  }
+  nav {
+    margin-right: 20px;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      font-size: 1.7rem;
+      display: inline-block;
+      }
+  }
+  aside {
+    display: none;
+  }
+  .pic {
+    background: url("../img/discuss01.jpg");
+    background-size: cover;
+    height: 445px;
+    @include flex;
+    align-items: flex-end;
+    width: auto;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+  }
+  /*---------------------content----------------------*/
+  }.img img {
+       width: 100%;
+     }
+  .option {
+    p {
+      display: none;
+    }
+  }
+  .title-box {
+    font-size: 2.2rem;
+    line-height: 30px;
+    margin-bottom: 80px;
+  }
+  #titleA {
+    position: relative;
+    left: 380px;
+    background-color: #fff;
+    padding: 15px;
+  }
+  #titleB {
+    background-color: black;
+    color: #ffffff;
+    padding: 15px;
+  }
+  #nd-nav {
+    @include flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: $green_theme;
+    &:nth-child(2) {
+      border: $separate;
+    }
+  }
+}
+/*---------------------commonSet--------------------------*/
+h3 {
+  color: $green_type;
+  font-size: 1.8rem;
+}
+time {
+  color: #AAA;
 }

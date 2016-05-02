@@ -1,141 +1,50 @@
-/*--------------------480px----------------------*/
-@media screen and (max-width: 480px) {
-  body {
-    margin-top: 10px;
-    max-width: 350px;
-    margin-left: auto;
-    margin-right: auto; }
+/*
+Error: Invalid CSS after "    $": expected identifier, was ":nth-child(2) {"
+        on line 205 of style.scss
 
-  /*---------------nav-top-----------------------*/
-  #nav-info {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column-reverse; }
+200:   /*---------------------content----------------------*\/
+201:   }.img img {
+202:        width: 100%;
+203:      }
+204:   .option {
+205:     $:nth-child(2) {
+206:     
+207:     p {
+208:       display: none;
+209:     }
+210:   }
 
-  ul {
-    list-style-type: none;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row; }
-    ul li {
-      margin-left: 2.5px;
-      margin-right: 2.5px;
-      font-size: 1.4rem; }
-
-  .icon {
-    margin-left: auto;
-    margin-right: auto; }
-    .icon img {
-      width: 60px;
-      height: auto; }
-
-  .pic {
-    background: url("../img/discuss01.jpg");
-    height: 248px;
-    -webkit-background-size: cover;
-    background-size: cover;
-    display: flex;
-    display: -webkit-flex;
-    align-items: flex-end;
-    -webkit-align-content: flex-end; }
-
-  #titleA {
-    background-color: #fff;
-    font-size: 1rem;
-    width: 350px;
-    line-height: 1rem; }
-
-  #titleB {
-    background-color: black;
-    color: #ffffff;
-    font-size: 1rem;
-    width: 350px;
-    line-height: 1rem; }
-
-  aside, #nd-nav {
-    display: none; }
-
-  /*--------------------content---------------------------*/
-  .img img {
-    width: 100%;
-    -webkit-background-size: cover;
-    background-size: cover; }
-
-  .arti-with-pic {
-    box-sizing: border-box;
-    padding-top: 20px; } }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  #wrapper {
-    width: 480px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .icon img {
-    width: 60px; }
-
-  ul {
-    list-style-type: none; }
-    ul li {
-      margin-left: 10px;
-      margin-bottom: 20px;
-      font-size: 1.7rem;
-      display: inline-block; }
-
-  #nav-info {
-    display: flex;
-    display: -webkit-flex; }
-
-  aside {
-    display: none; }
-
-  #nd-nav {
-    display: none; }
-
-  .pic {
-    background: url("../img/discuss01.jpg");
-    background-size: cover;
-    height: 248px;
-    display: flex;
-    display: -webkit-flex;
-    align-items: flex-end;
-    width: 480px; }
-
-  .title-box {
-    width: 100%;
-    line-height: 1rem; }
-
-  #titleA {
-    background-color: white;
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5;
-    padding-left: 10px; }
-
-  #titleB {
-    background-color: black;
-    color: #ffffff;
-    padding-left: 5px; }
-
-  /*---------------------content----------------------*/
-  #archives {
-    display: flex;
-    display: -webkit-flex;
-    width: 100%;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .arti-with-pic {
-    width: 50%;
-    margin-top: 20px;
-    box-sizing: border-box;
-    padding-left: 2.5px;
-    padding-right: 2.5px; }
-
-  .img img {
-    width: 100%; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:205
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:616:in `variable'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:674:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:663:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:655:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:363:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    $\": expected identifier, was \":nth-child(2) {\"\A         on line 205 of style.scss\A \A 200:   /*---------------------content----------------------*/\A 201:   }.img img {\A 202:        width: 100%;\A 203:      }\A 204:   .option {\A 205:     $:nth-child(2) {\A 206:     \A 207:     p {\A 208:       display: none;\A 209:     }\A 210:   }"; }
